@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/static/css/home.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li id="navbar-username">Loading username...</li>
+            <li id="navbar-role">Loading role...</li>
+            <li><button id="logout-btn" onclick="logout()">Logout</button></li>
+        </ul>
+        </ul>
+    </nav>
+    <div>
+        <label for="user-select">Select User:</label>
+        <select id="user-select">
+            <option value="">--Choose a user--</option>
+            <!-- Options will be dynamically populated by JavaScript -->
+        </select>
+    </div>
+    <div id="manager-comment-section"></div>
+    <ul id='messages'>
+    </ul>
+</body>
+<script src="/static/js/home.js"></script>
+</html>
